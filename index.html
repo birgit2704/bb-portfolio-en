@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BB Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devjane.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Birgit</strong><strong>Bartenschlager</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img src="img/dev-jane-01.jpg" alt="BB smiling" class="intro__img" />
+    </section>
+
+    <!-- SERVICES -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Design + Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+            quo vitae pariatur accusantium quis quae impedit cumque sunt,
+            deleniti velit id. Impedit quo libero, iusto doloremque dolores
+            neque aliquid maiores.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>E-Commerce</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            laborum dicta doloribus, pariatur optio asperiores ipsa hic ullam
+            aspernatur perferendis voluptatum a vitae sint veniam, corrupti quo
+            architecto dolore maiores.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>WordPress</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi,
+            nihil voluptatem. Ea, vitae. Maiores totam amet dolorum commodi
+            placeat. Nostrum, hic. Tenetur labore veritatis quis ut reiciendis
+            repudiandae ipsam tempore.
+          </p>
+        </div>
+      </div>
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & developer based out of NYC
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, sed
+          aut explicabo cum repellat voluptates maiores reprehenderit molestiae
+          distinctio consectetur nostrum hic beatae dolore quaerat in! Facilis
+          quos, velit aliquam ab harum molestias corporis est veritatis, numquam
+          deleniti maiores hic assumenda nesciunt voluptatum id enim!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rerum
+          voluptas voluptates, accusamus quam ut fuga tenetur alias blanditiis
+          nisi ipsum expedita maxime a? Excepturi repellendus fugit doloribus
+          minima quisquam!
+        </p>
+      </div>
+
+      <img
+        src="img/dev-jane-02.jpg"
+        alt="BB doing something"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- WORK -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
+          <p>desc</p>
+        </a>
+        <!-- Portfolio item 02 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio item 03 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio item 04 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio item 05 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-05.jpg" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio item 06 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-06.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a href="mailto:birgit.bartenschlager@web.de" class="footer__link"
+        >birgit.bartenschlager@web.de</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
