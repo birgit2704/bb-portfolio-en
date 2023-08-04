@@ -14,17 +14,21 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
+    <!-- 
+    Source Sans Pro + Source code pro -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
     <header>
       <div class="logo">
-        <img src="img/devjane.png" alt="" />
+        <!-- <img src="img/devjane.png" alt="" /> -->
+        <p class="logo-text">Portfo<span class="accent">lio</span></p>
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -51,7 +55,7 @@
         Hi, I am <strong>Birgit</strong><strong>Bartenschlager</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-      <img src="img/dev-jane-01.jpg" alt="BB smiling" class="intro__img" />
+      <img src="img/birgit.jpg" alt="BB smiling" class="intro__img" />
     </section>
 
     <!-- SERVICES -->
@@ -59,26 +63,30 @@
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
         <div class="service">
-          <h3>Design + Development</h3>
+          <h3>Web Development</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
-            quo vitae pariatur accusantium quis quae impedit cumque sunt,
-            deleniti velit id. Impedit quo libero, iusto doloremque dolores
-            neque aliquid maiores.
+            I'm a front-end developer who takes great pride in crafting engaging
+            web experiences. Proficient in JavaScript and React, I relish the
+            opportunity to take on coding challenges that result in dynamic
+            websites. By leveraging front-end libraries, I weave in captivating
+            animations to enhance user interaction. Feel invited to explore my
+            showcased projects below to witness my coding journey.
           </p>
         </div>
 
         <div class="service">
-          <h3>E-Commerce</h3>
+          <h3>UI/UX Design</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            laborum dicta doloribus, pariatur optio asperiores ipsa hic ullam
-            aspernatur perferendis voluptatum a vitae sint veniam, corrupti quo
-            architecto dolore maiores.
+            As a software developer, I find joy in carefully weaving design into
+            my work. With a nod to industry standards, I shape interfaces that
+            aim to create meaningful user interactions. Guided by Figma's tools,
+            I sketch out designs that hope to enhance user experiences. Check
+            out my projects and see blend of code and design that I strive to
+            achieve."
           </p>
         </div>
 
-        <div class="service">
+        <!-- <div class="service">
           <h3>WordPress</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi,
@@ -86,7 +94,7 @@
             placeat. Nostrum, hic. Tenetur labore veritatis quis ut reiciendis
             repudiandae ipsam tempore.
           </p>
-        </div>
+        </div> -->
       </div>
 
       <a href="#work" class="btn">My Work</a>
@@ -131,7 +139,7 @@
 
       <div class="portfolio">
         <!-- Portfolio item 01 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
           <p>desc</p>
         </a>
@@ -176,6 +184,11 @@
         </li>
       </ul>
     </footer>
+    <button class="btn btn-en" id="btn-en">EN</button>
+    <button class="btn btn-de" id="btn-de">DE</button>
+    <button class="btn btn-warm" id="btn-warm">☀️</button>
+    <button class="btn btn-cold" id="btn-cold">⛄</button>
+    <!-- <button class="btn btn-music" id="btn-music">🎼</button> -->
     <script src="index.js"></script>
   </body>
 </html>

@@ -10,3 +10,13 @@ navLinks.forEach((link) =>
     document.body.classList.remove("nav-open");
   })
 );
+
+document.querySelector("#btn-warm").addEventListener("click", () => {
+  document.body.classList.add("theme-warm");
+
+  //   document.querySelector("#btn-warm").disabled = true;
+});
+
+document.querySelector("#btn-cold").addEventListener("click", () => {
+  document.body.classList.remove("theme-warm");
+});
