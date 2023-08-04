@@ -21,7 +21,7 @@ document.querySelector("#btn-cold").addEventListener("click", () => {
   document.body.classList.remove("theme-warm");
 });
 
-var tl = gsap.timeline({ defaults: { duration: 1.1 } });
+var tl = gsap.timeline({ defaults: { duration: 1 } });
 
 tl
   // .from("header", {
