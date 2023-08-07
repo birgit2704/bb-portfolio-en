@@ -421,6 +421,12 @@ img {
 .about-me__img {
   box-shadow: var(--bs);
 }
+.about-me__btns {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
 @media (min-width: 600px) {
   .about-me {
@@ -429,8 +435,13 @@ img {
     grid-template-areas:
       "title img"
       "subtitle img"
-      "text img";
+      "text img"
+      "btn btn";
     grid-column-gap: 2em;
+  }
+
+  .about-me__btns {
+    grid-area: btn;
   }
 
   .section__title--about {
