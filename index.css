@@ -79,6 +79,9 @@ strong {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
 }
+a {
+  text-decoration: none;
+}
 
 /* BUTTONS */
 .btn {
@@ -495,6 +498,12 @@ img {
   overflow: hidden;
 }
 
+.portfolio__img {
+  width: 267px;
+  height: 267px;
+  object-fit: cover;
+}
+
 /* .portfolio__img {
   transition: 
   transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
@@ -566,4 +575,27 @@ img {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* CERTIFICATES PAGE */
+.certificate-img {
+  /* display: inline-block; */
+  /* width: 250px; */
+  height: 250px;
+  object-fit: cover;
+}
+
+.certificates {
+  margin-top: -5em;
+  text-align: center;
+}
+
+.desc img {
+  margin: 0 auto;
+}
+.prof {
+  font-size: var(--fs-h3);
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark);
 }
