@@ -499,7 +499,7 @@ img {
 }
 
 .portfolio__img {
-  width: 267px;
+  width: 100%;
   height: 267px;
   object-fit: cover;
 }
@@ -565,16 +565,17 @@ img {
 }
 
 /* PORTFOLIO INDIVIDUAL */
-.portfolio-item-individual {
-  padding: 0 2em 2em;
-  max-width: 1000px;
-  margin: 0 auto;
+.section__projects {
+  margin-top: -5em;
 }
-
-.portfolio-item-individual p {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.project__container {
+  display: flex;
+}
+.project__container h3,
+.project__container p {
+  margin: 0 1em 0 0;
+  padding: 0;
+  line-height: 2rem;
 }
 
 /* CERTIFICATES PAGE */
