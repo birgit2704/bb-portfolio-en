@@ -103,33 +103,19 @@ a {
   transform: scale(1.1);
 }
 
-.btn-en {
-  position: absolute;
-  top: 60px;
-  right: 80px;
-  padding: 0.5em;
-  width: 40px;
-}
-
 .btn-de {
   position: absolute;
   top: 60px;
   right: 24px;
   padding: 0.5em;
   width: 40px;
+  text-align: center;
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
 }
 
 .btn-warm {
   position: absolute;
-  top: 110px;
-  right: 80px;
-  padding: 0.5em;
-  width: 40px;
-}
-
-.btn-cold {
-  position: absolute;
-  color: #fff;
   top: 110px;
   right: 24px;
   padding: 0.5em;
@@ -137,24 +123,14 @@ a {
 }
 
 @media (min-width: 900px) {
-  .btn-en {
+  .btn-de {
     right: 24px;
     top: 100px;
   }
 
-  .btn-de {
-    right: 24px;
-    top: 150px;
-  }
-
   .btn-warm {
     right: 24px;
-    top: 200px;
-  }
-
-  .btn-cold {
-    right: 24px;
-    top: 250px;
+    top: 150px;
   }
 }
 
@@ -566,16 +542,65 @@ img {
 
 /* PORTFOLIO INDIVIDUAL */
 .section__projects {
-  margin-top: -5em;
+  margin-top: -9em;
 }
+
+.projects__note {
+  text-align: center;
+  font-style: italic;
+  margin: 0 2em 2em;
+  padding: 0;
+}
+
 .project__container {
-  display: flex;
+  margin-bottom: 4em;
+  margin-top: 4em;
 }
+
 .project__container h3,
 .project__container p {
-  margin: 0 1em 0 0;
+  margin-bottom: 1em;
   padding: 0;
-  line-height: 2rem;
+  line-height: 1.6rem;
+}
+.project__links {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw-bold);
+}
+
+.backToProjects__btn {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 360px) {
+  .project__links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .section__projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -6em;
+  }
+  .project__container {
+    display: grid;
+    grid-template-columns: 0.8fr 2.2fr 1.2fr;
+    align-items: start;
+    grid-column-gap: 30px;
+  }
+  .project__links {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+  }
 }
 
 /* CERTIFICATES PAGE */
