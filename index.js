@@ -40,6 +40,6 @@ navLinks.forEach((link) =>
 
 // ANIMATION WHEN PAGE LOADS
 
-var tl = gsap.timeline({ defaults: { duration: 2.5 } });
+const tl = gsap.timeline({ defaults: { duration: 2.5 } });
 
 tl.from(".intro", { opacity: 0 });

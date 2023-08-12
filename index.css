@@ -306,6 +306,38 @@ header {
   bottom: 6px;
 }
 
+@media (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    position: relative;
+    transform: none;
+    background-color: transparent;
+    color: var(--clr-dark);
+  }
+  .nav__list {
+    flex-direction: row;
+  }
+  .nav__link {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body);
+    padding: 0;
+    margin: 0 2em;
+  }
+  .nav__link:last-of-type {
+    margin-right: 0;
+  }
+  .active {
+    opacity: 0.5;
+  }
+
+  .active:hover {
+    color: var(--clr-dark);
+    opacity: 0.5;
+  }
+}
+
 /* HERO */
 .intro {
   position: relative;
