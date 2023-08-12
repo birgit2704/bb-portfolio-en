@@ -122,6 +122,15 @@ a {
   width: 40px;
 }
 
+.back-to-top {
+  font-size: 30px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 250px;
+  right: 10px;
+  display: none;
+}
+
 @media (min-width: 900px) {
   .btn-de {
     right: 24px;

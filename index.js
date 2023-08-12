@@ -43,3 +43,24 @@ navLinks.forEach((link) =>
 const tl = gsap.timeline({ defaults: { duration: 2.5 } });
 
 tl.from(".intro", { opacity: 0 });
+
+// BACK TO TOP BUTTON
+
+const backToTopBtn = document.getElementById("back-to-top");
+
+if (backToTopBtn) {
+  window.onscroll = function () {
+    scrollFunction();
+  };
+}
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 250 ||
+    document.documentElement.scrollTop > 250
+  ) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
